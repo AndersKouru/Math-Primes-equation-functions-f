@@ -24,9 +24,9 @@ def primeFactor(prim_tal):
         end = pow(prim_spar,0.5)
         end_spar = 1
         end_spar = int(end)
-        #print("end = ",end_spar," skulle kunna spara tid!")
+        #print("end = ",end_spar," could save some time!")
         prim_spar = float(prim_spar)
-        prim = 1                # Vi antar att talet är prim!
+        prim = 1                # We asume the number is prime!
         antal_div = 0
         rest  = 1.0
         test  = 1.0
@@ -34,15 +34,15 @@ def primeFactor(prim_tal):
         potens = 0
         print("factorizing !         ")
         print("")
-        print("Talet ",prim_spar," faktoriseras! ")
+        print("Talet ",prim_spar," factoring the number! ")
         prim_tal = prim_spar
-        while divisor <= prim_tal and prim_tal > 2:  # pröva med end istället för prim_tal
+        while divisor <= prim_tal and prim_tal > 2:  # try end instead of prim_tal
             rest = prim_tal/divisor
             test = floor(rest)
-            while rest == test and prim_tal >= divisor:# pröva med end istället för divisor
+            while rest == test and prim_tal >= divisor:# try end instead of divisor
                 prim_tal = rest
-                rest = (prim_tal/divisor) # Vi ska se hur många gånger
-                test = floor(rest)        # det går att dividera med divisor
+                rest = (prim_tal/divisor) # We shall see how many times
+                test = floor(rest)        # we can divide with divisor
                 potens += 1
                 prim += 1
             if potens > 0:
