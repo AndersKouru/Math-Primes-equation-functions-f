@@ -2,7 +2,6 @@
 # Anders Kouru   31 July 2014
 
 import math
-
 MIN_ROW     = int(10)
 MAX_COLUMNS = int(35)
 
@@ -26,8 +25,6 @@ def make_the_table(number):
     num   = 1
     multi_list = save_list[0:number]             # Number of columns!
     #copy      = save_list[0:number]
-    
-    
     print('')
     j  = int(1)
     for i in range(0,minimum_rows,1):            # number of rows is determined in the outer loop!
@@ -42,7 +39,6 @@ def make_the_table(number):
     print("")
     print("")
     return 0
-
 
 def main():
     number = int(5)
