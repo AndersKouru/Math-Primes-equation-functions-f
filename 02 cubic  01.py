@@ -1,18 +1,17 @@
 # Solves third degree equations!
 # Anders Kouru 9 july 2014
 
-# ekvationen x3 -6x2 +11x -6 = 0, har lösningar  x1 = 1, x2 = 2, x3 = 3
+# The ekvation x3 -6x2 +11x -6 = 0, has solutions  x1 = 1, x2 = 2, x3 = 3
 
 import math
 
 def introFunction():
     print("This function Solves Third degree equations!")
 
-
 def thirdDegreeEquation(p,q,r):
-    print("p = ",p)
-    print("q = ",q)
-    print("r = ",r)
+    print("")
+    print("X^3 + ",p,"X^2 +",q,"X +",r," = 0")
+    print(" (has the solution/solutions) ")
     test = float(1)
     m_720 = float(720.0)
     m_1440 = float(1440.0)
@@ -34,8 +33,7 @@ def thirdDegreeEquation(p,q,r):
     num4  = float(1)
     num5  = float(1)
     num6  = float(1)
-    num6  = a1/3.0                  #Bra att spara
-    print("num6 = a1/3.0 = ",num6)
+    num6  = a1/3.0                  
     num7  = float(1)
     num8  = float(1)
     num9  = float(1)
@@ -45,79 +43,54 @@ def thirdDegreeEquation(p,q,r):
     num13 = float(1)
     num14 = float(1)
     Q = ((a1*a1) -(3.0 *a2))/9.0
-    print("Q = ",Q)
     R  = ((2.0 *a1*a1*a1)-(9.0 *a1*a2) +(27.0*a3))/54.0
-    print("R = ",R)
     R2_Q3 = (R*R) - (Q*Q*Q)
-    print("R2_Q3 = ",R2_Q3)
     if R2_Q3 <= 0: #if R2_Q3 <= 0      # the number of solutions = 3
         num  = math.sqrt(Q*Q*Q)
         if num == 0:
             num += 0.00000000000000000001
         num2 = R/num
         num3 = math.radians(num2)
-        theta = math.acos(num3)     #Bra att spara
-        num = -2.0 * math.sqrt(Q)   #Bra att spara
-        print("theta = ",theta)
+        theta = math.acos(num3)     
+        num = -2.0 * math.sqrt(Q)
         num13 = math.cos(theta/3.0)
-        print("num = -2.0 *math.sqrt(Q) =",num)
-        print("num 13 = math.cos(theta/3.0) = ",num13)
         x1  = num * math.cos(theta/3.0) - a1/3.0
-        print("x1 = num * math.cos(theta/3.0) - a1/3.0")
         print("")
         print("x1 = ",x1)                           #x1
-        print("")
-        print("")
+        
         num4  = math.degrees(m_720)
         num5  = (theta + m_720)/3.0
         num7 = math.cos(num5)
         num8 = math.degrees(num8)
         num9 = (num * num7)
-        print("num = ",num)
         x2 = num9 -num6
         print("")
         print("x2 = ",x2)                           #x2
-        print("")
-        print("num = -2.0 * math.sqrt(Q) =",num)
+        
         num4  = math.degrees(m_1440)
-        print("theta = ",theta)
         num5  = (theta + m_1440)/3.0
         num7 = math.cos(num5)
-        print("num7 = cos (theta + 1440)/3 = ",num7)
         num8 = math.degrees(num7)
-        print("num8 = math.degrees(num7) = ",num8)
         num9 = (num * num7)
-        print("num * num7 = ",num9)
         x3 = num9 -num6
         print("")
         print("x3 = ",x3)                           #x3
     else:                       #The number of solutions = 1
         print("")
         num4  = math.sqrt(R2_Q3)
-        print("num4 = math.sqrt(R2_Q3) = ",num4)
         num5  = math.fabs(R)
-        print("num5 = math.fabs(R) = ",num5)
         num7 = num4 + num5
-        print("num7 = num4 + num5 =",num7)
         num8 = math.pow(num7,1/3.0)
-        print("num8 = math.pow(num7,1/3.0) = ",num8)
         
         num9 = num8 + (Q/num8)
-        print("num9 =  num8 + (Q/num8) =",num9)
-        print("R = ",R)
         if R < 0:
             num10 = num9 * 1.0
         else:
             num10 = num9 * (-1.0)
-        print("num6 = ",num6)
         x1 = num10 - num6
         print("")
         print("x1 = ",x1)
-
-    
-    return 0
-
-        
+    return 0    
 
 def main():
     forts = 1
@@ -129,8 +102,7 @@ def main():
         forts = input("continue = 1,  end = 0                           ")
         if forts == '0':
                 break
-        #forts = int(forts)
-
+    return 0
 
 def inputFunction():    
     print("Write the Third degree function in the form    ")
@@ -144,7 +116,5 @@ def inputFunction():
     r = float(r)
     thirdDegreeEquation(p,q,r)
     return 0
-
-
 
 main()
