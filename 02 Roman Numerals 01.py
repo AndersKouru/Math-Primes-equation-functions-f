@@ -2,7 +2,6 @@
 # Credit: Paul M. Winkler, from Python Cookbook First Edition
 # Anders Kouru 25 sept 2015
 
-
 import math
 import string
 
@@ -18,7 +17,6 @@ def introFunction(choice):
         choice = int(choice)
     return choice
         
-
 def inputFunction():
     num = int(1)
     num = input("Convert an integer to a Roman numeral, from 1 to 3999           ")
@@ -27,7 +25,6 @@ def inputFunction():
         num = input("an integer to a Roman numeral, from 1 to 3999           ")
         num = int(num)
     return num
-
 
 def int_to_roman(num):
     j= int(1)
@@ -45,7 +42,6 @@ def int_to_roman(num):
         print("{:}".format(a*j),end='')
     print("")        
     return None
-
 
 def roman_to_int():
     sum = int(0)
@@ -71,7 +67,6 @@ def roman_to_int():
     print("roman ",roman,"= ",sum)
     return None
 
-
 def main():
     forts  = int(1)
     sum    = int(0)
@@ -92,6 +87,5 @@ def main():
             break
         #forts = int(forts)
     return None
-
 
 main()
