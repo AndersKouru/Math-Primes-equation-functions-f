@@ -1,7 +1,6 @@
-# Prime 03
+# Prime 01
 # decides if a number is Prime!
 # Anders Kouru     29 june 2014
-
 
 import math
 
@@ -33,8 +32,7 @@ def prime(prim,is_prime):
     rest = 1.0
     test = 1.0
     a = int(2)
-    while(divisor*divisor <= end and antal_div < 2): # save work if not prime!
-        #print("divisor*divisor = ",divisor*divisor)
+    while(divisor*divisor <= end and antal_div < 2): # save work if not prime
         rest = primkopia/divisor
         test = floor(rest)
         divisor += 1.0
@@ -47,7 +45,6 @@ def prime(prim,is_prime):
         if (antal_div > 1):
            is_prime = 0
     return is_prime
-
 
 def main():
     forts = 1                 # continue = 1
@@ -66,7 +63,6 @@ def main():
         print(forts)
         forts = int(forts)
         
-
 main()       
 
 
