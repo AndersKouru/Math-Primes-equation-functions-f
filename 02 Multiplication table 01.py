@@ -1,4 +1,4 @@
-# Makes a Multiplication table up to 35 times 35!
+# Makes a Multiplication table up to 33 times 33!
 # Anders Kouru   31 July 2014
 
 import math
