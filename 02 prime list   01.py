@@ -8,22 +8,19 @@ width = 5
 count = int(0)
 
 def introFunction():
-        print("This function makes a list of Prime numbers!")
+    print("This function makes a list of Prime numbers!")
 
-        
 def doTheJob(start,num):
     prim = start
     arbnum = num
     is_prime = int(1)
     maximum = 0                 # maximun = 1
     count   = 0
-    while (maximum < arbnum):   # while maximum <= arbnum
+    while (maximum < arbnum):   
         for a in range(1,num):
-            is_prime = prime(prim,is_prime)
-                
+            is_prime = prime(prim,is_prime)   
             if is_prime == 1:
-                print(" {:13}".format(prim),end=' ')
-                
+                print(" {:8}".format(prim),end='   ')
                 maximum += 1
                 prim    += 2
                 count   += 1
@@ -31,11 +28,8 @@ def doTheJob(start,num):
                 prim += 1
             if count == num:
                 break
-        
     print("")
-    #print("count = ",count,"maximum = ",maximum)
-    return 0   # här är jag!
-
+    return 0
 
 def main():
     start = int(2)
@@ -50,16 +44,13 @@ def main():
         num = int(num)
         if num <= 0:
                 num = int(1)
-                #print("num = ",num)
         prim  = start
-        #is_prime = prime(prim,is_prime)
         doTheJob(start,num)
         print("")
         forts = input("continue = 1,  end = 0                     ")
         print(forts)
         forts = int(forts)
                
-
 def inputFunction(start):
         print('Where do we look for the lowest Prime?' )
         start = input('It should be 2 or higher.                         ')
@@ -89,7 +80,6 @@ def prime(prim,is_prime):
     test = 1.0
     a = int(2)
     while(divisor*divisor <= end and antal_div < 2): # save some work if number is not a prime!
-        #print("divisor*divisor = ",divisor*divisor)
         rest = primkopia/divisor
         test = floor(rest)
         divisor += 1.0
