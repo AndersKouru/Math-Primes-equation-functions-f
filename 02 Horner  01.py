@@ -125,22 +125,22 @@ def find_start(ekv_z,degree,start2,y_noll):
             y_noll = y_ett
 
         if degree == 4:
-            num_3 = new_start[3] # förstagrads termen
+            num_3 = new_start[3] 
             num_3 = float(num_3)
-            num_4 = new_start[4] # konstant termen
+            num_4 = new_start[4] 
             num_4 = float(num_4)
-            num_1  += ftal    # tredje grads termen
+            num_1  += ftal    
             ftal2  = num_1 * ftal
-            num_2  += ftal2   # andra grads termen
+            num_2  += ftal2   
             num_1  += ftal
             ftal3  = num_2 * ftal
-            num_3  += ftal3   # första grads termen 
+            num_3  += ftal3   
             ftal2  = num_3 * ftal
-            num_4  += ftal2   # konstant termen är färdig! = z_noll
+            num_4  += ftal2   # constant term will be placed in z_noll
             ftal3  = num_1 * ftal
-            num_2  += ftal3   # andra grads termen 
+            num_2  += ftal3   # second degree term 
             ftal2  = num_2 * ftal
-            num_3  += ftal2   # the first degree term = z_prim
+            num_3  += ftal2   # the first degree term is placed in z_prim
             num_1  += ftal    # third degree term!
             z_noll = num_4
             z_prim = num_3
@@ -151,15 +151,15 @@ def find_start(ekv_z,degree,start2,y_noll):
             y_noll = y_ett
 
         if degree == 5:
-            num_3 = new_start[3] # second degree term
+            num_3 = new_start[3] 
             num_3 = float(num_3)
-            num_4 = new_start[4] # first degree term
+            num_4 = new_start[4] 
             num_4 = float(num_4)
-            num_5 = new_start[5] # constant term
+            num_5 = new_start[5] 
             num_5 = float(num_5)
-            num_1  += ftal    # forth degree term
+            num_1  += ftal    
             ftal2  = num_1 * ftal
-            num_2  += ftal2   # third degree term
+            num_2  += ftal2  
             num_1  += ftal
             ftal3  = num_2 * ftal
             num_3  += ftal3   # working on the second degree term!
@@ -284,7 +284,7 @@ def find_z(ekv_z,copy,degree,start):   # transforms the oringinal equation to an
             ftal2  = num_1 * ftal
             num_2  += ftal2  
             num_1  += ftal             
-            ekv_z[0]  = num_0   # 5:te grads termen
+            ekv_z[0]  = num_0   # 5:th degree term
             ekv_z[1]  = num_1   # 4:th degree term
             ekv_z[2]  = num_2   # 3:d degree term
             ekv_z[3]  = num_3   # 2 = second degree term
