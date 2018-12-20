@@ -1,12 +1,12 @@
 # Solves second degree equations!
 # Anders Kouru 3 july 2014
-
 # The equation x^2 -x -2 = 0, have the solutions x1 = -1, x2 = -2
 
 import math
 
 def introFunction():
     print("This function Solves Second degree equations!")
+    return 0
 
 def secondDegreeEquation(p,q):
     #print("p = ",p)
@@ -31,7 +31,6 @@ def secondDegreeEquation(p,q):
             print(" +",p,"x ",end="")
         else:
             print(" ",p,"x ",end="")
-
         if q >= 0:
             print("  +",q," = 0")
         else:
