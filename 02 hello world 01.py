@@ -1,8 +1,6 @@
 # Hello World
 # 10 mars 2017,  Anders Kouru
 
-
-
 def main():
     number = int(1)                   
     while number != 0:
