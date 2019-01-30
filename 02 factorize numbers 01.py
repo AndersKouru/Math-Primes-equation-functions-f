@@ -47,7 +47,6 @@ def prime_Factor(prime_numb):
         print(" is prime!  ")          
     return 0
 
-#prime_numb  = 2
 def main():
     forts = 1
     while forts != 0:
