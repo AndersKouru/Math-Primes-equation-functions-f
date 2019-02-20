@@ -1,4 +1,5 @@
-# Makes a Multiplication table up to 19 times 19 !
+# Makes a Nice Multiplication table up to 19 times 19 !
+# This table is nice for "shy" mathematicians, people who are "intimidated" by the "ordinary" times table!
 # Anders Kouru   30 January 2019
 
 import math
