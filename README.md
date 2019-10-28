@@ -1,5 +1,5 @@
 # Math-Primes-equation-functions-f
-    I like to program in Python 3.7
+    I like to program in Python 3.8
     Feel free to look at my math programs, prime numbers, prime number lists, etc.
     I am also proud of my Twin prime list! It prints out Twin primes, and it is useful to see the distribution of twin primes! 
     (check it out!)
